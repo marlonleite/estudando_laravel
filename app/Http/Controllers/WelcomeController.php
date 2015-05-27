@@ -33,4 +33,11 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
+	public function exemplo()
+	{
+		$nome = 'Marlon';
+		$sobrenome = "Leite";
+		return view('exemplo', compact('nome', 'sobrenome'));
+	}
+
 }
